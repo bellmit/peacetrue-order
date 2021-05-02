@@ -1,0 +1,7 @@
+description '订单客户端'
+
+dependencies {
+    api project(":peacetrue-order-service-api")
+    api 'org.springframework.data:spring-data-commons'
+    api 'com.playtika.reactivefeign:feign-reactor-spring-configuration'
+}

@@ -1,0 +1,4 @@
+peacetrue:
+  init:
+    conditional-script-locations:
+      'com.github.peacetrue.order.Order': /schema-order-mysql.sql

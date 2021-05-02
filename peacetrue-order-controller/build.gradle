@@ -1,0 +1,13 @@
+description '订单控制器'
+
+dependencies {
+    api project(":peacetrue-order-service-api")
+    implementation "com.github.peacetrue:peacetrue-spring"
+    implementation "org.springframework.boot:spring-boot-starter-webflux"
+    implementation "org.springframework.data:spring-data-commons"
+
+    testImplementation project(':peacetrue-order-service-impl')
+    testImplementation project(path: ':peacetrue-order-service-impl', configuration: 'testArtifacts')
+    testRuntimeOnly 'dev.miku:r2dbc-mysql'
+    testRuntimeOnly 'mysql:mysql-connector-java'
+}
